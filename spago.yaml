@@ -1,0 +1,27 @@
+workspace:
+  packageSet:
+    registry: 67.0.1
+  extraPackages:
+    hylograph-simulation-core:
+      path: ../purescript-hylograph-simulation-core
+
+package:
+  name: hylograph-wasm-kernel
+  description: Rust/WASM force simulation kernel for Hylograph (3-4x faster than D3)
+  publish:
+    version: 0.1.0
+    license: MIT
+    location:
+      githubOwner: afcondon
+      githubRepo: purescript-hylograph-wasm-kernel
+  dependencies:
+    - aff
+    - arrays
+    - effect
+    - foreign-object
+    - halogen-subscriptions
+    - maybe
+    - prelude
+    - hylograph-simulation-core
+    - refs
+    - tuples
